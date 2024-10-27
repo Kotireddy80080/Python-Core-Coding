@@ -1,0 +1,62 @@
+print("1.Reverse of a list")
+
+L1=[20,6,8,0,5,5,9,1,4,3,422,44,55,44,75]
+print(L1)
+print()
+L1.reverse()
+print(L1)
+print()
+
+print("2.Find largest element of a list")
+
+L1=[20,6,8,0,5,5,9,1,4,3,422,44,55,44,75]
+print(L1)
+Largest=max(L1)
+print(Largest)
+print()
+
+print("3.Remove duplicates from a list")
+
+L1=[20,6,8,0,5,5,9,1,4,3,422,44,55,44,75]
+L2=[]
+for x in L1:
+    if(x not in L2):
+        L2.append(x)
+print(L1)
+print(L2)
+
+print("4. Find the Second Largest Element in a List")
+
+L1=[20,6,8,0,5,5,9,1,4,3,422,44,55,44,75]
+print(L1)
+print()
+L1.sort()
+print(L1)
+print(L1[-2])
+print()
+
+print("5.Check it is a polindrome or not")
+
+L1=[1,2,3,2,1]
+print(L1)
+if (L1==L1[::-1]):
+    print(L1[::-1],":polindrome")
+else:
+    print("not a polindrome")
+print()
+
+print("6.Flatten a Nested List")
+print("example-1")
+L1=[[1],[2,3],[4,5,6,7]]
+flat=[]
+for x in L1:
+    for y in x:
+        flat.append(y)
+print(flat)
+
+print("example-2")
+
+L1=[[1],[2,3],[4,5,6,7]]
+flat=sum(L1,[])
+print(flat)
+
